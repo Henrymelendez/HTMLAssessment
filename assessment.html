@@ -1,10 +1,159 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
   </head>
+  <style media="screen">
+    html{
+      max-width:550px;
+      margin: auto;
+      font-family: Optima, sans-serif;
+      font-size: 18px;
+    }
+    header{
+
+    }
+  </style>
   <body>
+    <header id="header"><h2><b>Text</b></h2></header>
+    <section id="paragraphs">
+      <p id="p1"><em>Lorem</em> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
+      <p id="p2" style="margin-left: 10%; margin-right: 10%;"><i><strong><em>Lorem</em></strong> ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam tate velit esse cillu.</i></p>
+      <p id="p3"><i><em>Lorems</em> ipsum dolor sit ar incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        n proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
+    </section>
+
+    <section id="Table">
+      <header><h2><strong>Table</strong></h2></header>
+
+      <table>
+        <caption>Scores by quarter</caption>
+        <thead>
+
+        <tr>
+              <th></th>
+              <th>First</th>
+              <th>Half</th>
+              <th>Second</th>
+              <th>Half</th>
+              <th></th>
+          </tr>
+          </thead>
+          <tr>
+            <th scope="col">Team Name</th>
+            <th scope="col">Q1</th>
+            <th scope="col">Q2</th>
+            <th scope="col">Q3</th>
+            <th scope="col">Q4</th>
+            <th scope="col">Final</th>
+          </tr>
+
+        <tbody>
+          <tr>
+            <td>Denver</td>
+            <td>7</td>
+            <td>3</td>
+            <td>0</td>
+            <td>7</td>
+            <td>17</td>
+          </tr>
+
+          <tr>
+            <td>Chicago</td>
+            <td>0</td>
+            <td>6</td>
+            <td>3</td>
+            <td>6</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <th scope="row">Total</th>
+            <th>7</th>
+            <th>9</th>
+            <th>3</th>
+            <th>13</th>
+            <th>32</th>
+          </tr>
+        </tbody>
+
+      </table>
+    </section>
+
+    <section id="lists" class="#lists">
+      <header><h2><strong>List</strong></h2></header>
+      <img src="" alt="">
+      <ul>
+        <li><img src="https://static.www.nfl.com/t_q-best/league/api/clubs/logos/DEN" alt="Denver Broncos" width="70" height="70"></li>
+        <a href="https://www.denverbroncos.com/" target="_blank"> Denver Broncos</a>
+      <ul>
+        <li>Coach: Gary Kubiak</li>
+        <li>QB</li>
+        <ol>
+          <li>Brock Osweiler</li>
+          <li>Trevor Siemain</li>
+          <li>Peyton Manning (injured)</li>
+        </ol>
+      </ul>
+      <li><img src="https://a.espncdn.com/i/teamlogos/nfl/500/chi.png" alt="Chicago Bears" width="50" height="50"></li>
+      <a href="https://www.chicagobears.com/" target="_blank">Chicago Bears</a>
+      <ul>
+        <li>Coach: Gary Kubick</li>
+        <li>QB</li>
+        <ol>
+          <li>Jay Cutler</li>
+          <li>David Foles</li>
+        </ol>
+      </ul>
+      </ul>
+
+
+    </section>
+
+    <section>
+      <h1>FORM</h1>
+      <form class="" action="index.html" method="POST">
+        <label for="fname">First:</label>
+        <input type="text" name="fname" value="Bob">
+        <label for="lname">Last:</label>
+        <input type="text" name="lname" value="Dobbs">
+        </form>
+        <form>
+        <label for="favsport">Favorite Sport:</label>
+        <br>
+        <select name="favsport">
+          <option value="soccer">Soccer</option>
+          <option value="football">FootBall</option>
+          <option value="basketball">BasketBall</option>
+
+        </select>
+
+      </form>
+      <form class="checkboxes" action="index.html" method="Post">
+        <label for="boxes">I have:</label>
+        <input type="checkbox" name="attended" value="Attended">
+        <label for="attended">Attended</label>
+        <input type="checkbox" name="coached" value="Coached">
+        <label for="coached">Coached</label>
+        <input type="checkbox" name="bet" value="Bet on this sport">
+        <label for="bet">Bet on<br> this sport</label>
+      </form>
+      <form class="radios" action="index.html" method="post">
+        <label for="checks">For this sport I prefer the:</label>
+        <input type="radio" name="Amateur" value="Amateur">
+        <label for="Amateur">Amateur</label>
+        <input type="radio" name="College" value="College">
+        <label for="College">College</label>
+        <input type="radio" name="professional" value="professional">
+        <label for="professional">Professional</label>
+        <input type="submit" name="submitb" value="Submit">
+
+      </form>
+
+    </section>
 
   </body>
 </html>
