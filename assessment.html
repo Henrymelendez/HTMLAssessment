@@ -10,24 +10,41 @@
       margin: auto;
       font-family: Optima, sans-serif;
       font-size: 18px;
-    }
-    header{
 
     }
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    header {
+      font-size: 26px;
+    }
+    h2 {
+      margin: 5px;
+    }
+    .#lists {
+      margin: 15px;
+    }
+
+
   </style>
   <body>
     <header id="header"><h2><b>Text</b></h2></header>
     <section id="paragraphs">
-      <p id="p1"><em>Lorem</em> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      <p id="p1"><b><em>Lorem</em></b> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</p>
       <p id="p2" style="margin-left: 10%; margin-right: 10%;"><i><strong><em>Lorem</em></strong> ipsum dolor sit amet, consectetur adipisicing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam tate velit esse cillu.</i></p>
-      <p id="p3"><i><em>Lorems</em> ipsum dolor sit ar incididunt ut
+      <p id="p3"><i><b><em>Lorems</em> </b>ipsum dolor sit ar incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
         n proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
     </section>
 
-    <section id="Table">
+    <section id="Table" class="#table">
       <header><h2><strong>Table</strong></h2></header>
 
       <table>
@@ -36,15 +53,13 @@
 
         <tr>
               <th></th>
-              <th>First</th>
-              <th>Half</th>
-              <th>Second</th>
-              <th>Half</th>
-              <th></th>
+              <th colspan="2">First Half</th>
+              <th colspan="3">Second Half</th>
+
           </tr>
           </thead>
           <tr>
-            <th scope="col">Team Name</th>
+            <th rowspan="2">Team</th>
             <th scope="col">Q1</th>
             <th scope="col">Q2</th>
             <th scope="col">Q3</th>
@@ -85,8 +100,8 @@
 
     <section id="lists" class="#lists">
       <header><h2><strong>List</strong></h2></header>
-      <img src="" alt="">
-      <ul>
+
+      <ul class="#teams">
         <li><img src="https://static.www.nfl.com/t_q-best/league/api/clubs/logos/DEN" alt="Denver Broncos" width="70" height="70"></li>
         <a href="https://www.denverbroncos.com/" target="_blank"> Denver Broncos</a>
       <ul>
@@ -143,13 +158,13 @@
       </form>
       <form class="radios" action="index.html" method="post">
         <label for="checks">For this sport I prefer the:</label>
-        <input type="radio" name="Amateur" value="Amateur">
+        <input type="radio" name="Amateur" value="Amateur" >
         <label for="Amateur">Amateur</label>
         <input type="radio" name="College" value="College">
         <label for="College">College</label>
         <input type="radio" name="professional" value="professional">
         <label for="professional">Professional</label>
-        <input type="submit" name="submitb" value="Submit">
+        <input type="submit" name="submitb" value="Submit Query">
 
       </form>
 
