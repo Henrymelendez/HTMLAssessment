@@ -17,8 +17,12 @@
     }
     th, td {
       padding: 20px;
-      border: 1px solid black;
+      border: solid 1px #777;
     }
+    th {
+      background-color: lightblue;
+    }
+
 
     header {
       font-size: 26px;
@@ -51,21 +55,23 @@
         <caption>Scores by quarter</caption>
         <thead>
 
+
         <tr>
-              <th></th>
+              <th rowspan="2">Team Name</th>
               <th colspan="2">First Half</th>
               <th colspan="3">Second Half</th>
 
           </tr>
-          </thead>
+
           <tr>
-            <th rowspan="2">Team</th>
+
             <th scope="col">Q1</th>
             <th scope="col">Q2</th>
             <th scope="col">Q3</th>
             <th scope="col">Q4</th>
             <th scope="col">Final</th>
           </tr>
+        </thead>
 
         <tbody>
           <tr>
@@ -94,7 +100,7 @@
             <th>32</th>
           </tr>
         </tbody>
-
+        <footer>Team Score</footer>
       </table>
     </section>
 
