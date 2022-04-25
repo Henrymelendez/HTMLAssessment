@@ -73,3 +73,7 @@ tbody > tr:last-child {
 table thead th {
   background-color: red;
 }
+
+img {
+  display: none;;
+}
