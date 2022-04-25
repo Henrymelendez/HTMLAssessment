@@ -61,3 +61,15 @@ ol > li:first-child {
   font-weight: bold;
 
 }
+
+tbody > tr:first-child {
+  background-color: lightgreen;
+}
+
+tbody > tr:last-child {
+  background-color: red;
+}
+
+table thead th {
+  background-color: red;
+}
